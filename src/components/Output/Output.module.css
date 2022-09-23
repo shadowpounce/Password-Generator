@@ -1,0 +1,53 @@
+.output {
+  background-color: rgba(255, 255, 255, 0.08);
+  @apply w-full py-4 flex justify-center;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.outputCopied::before {
+  content: 'copied';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  @apply bg-green-600;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 0.6rem;
+  line-height: 100%;
+  padding: 0.1rem 0;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.outputCopied {
+  background-color: rgba(255, 255, 255, 0.08);
+  @apply w-full py-4 flex justify-center;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.outputCopied::before {
+  animation: copied 2s forwards ease;
+}
+
+@keyframes copied {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

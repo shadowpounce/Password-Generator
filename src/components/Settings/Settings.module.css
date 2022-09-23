@@ -1,0 +1,47 @@
+.settings {
+  @apply flex flex-col gap-2;
+}
+
+.option {
+  @apply w-full flex items-center justify-between p-4;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+}
+
+.inputCheckbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  align-items: center;
+  width: 52px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 24px;
+  border: 2px solid #938f99;
+  transition: border-color 200ms, background-color 200ms;
+  cursor: pointer;
+  display: flex;
+}
+
+.inputCheckbox::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 12px;
+  display: inline-block;
+  background-color: #938f99;
+  transition: all 0.2s ease;
+}
+
+.inputCheckbox:checked::before {
+  background-color: #381e72;
+  width: 24px;
+  height: 24px;
+  -webkit-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+.inputCheckbox:checked {
+  border-color: #d0bcff;
+  background-color: #d0bcff;
+}

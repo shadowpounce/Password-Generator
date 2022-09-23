@@ -1,0 +1,61 @@
+.range {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @apply p-4 mb-5 my-8 flex items-center;
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  left: 10px;
+  top: -20px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.labelValue {
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  right: 10px;
+}
+
+.labelValue.labelValueLeft {
+  left: 10px !important;
+}
+
+.sliderRange {
+  width: 90%;
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.5);
+  height: 3.5px;
+  border-radius: 1.25px;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+}
+
+.sliderRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.sliderRange::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
